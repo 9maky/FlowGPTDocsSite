@@ -1,15 +1,15 @@
 {
-  "index": "Introduction",
-  "another": "Another Page",
-  "advanced": "Advanced (A Folder)",
-  "about": {
-    "title": "About",
-    "type": "page"
-  },
+  "index": "FlowGPT Documentation",
+  "1start": "Getting Started",
+  "2features": "Features",
+  "3support": "Support",
+
   "contact": {
-    "title": "Contact ↗",
+    "title": "Social Media Platforms",
     "type": "page",
-    "href": "https://twitter.com/shuding_",
+    "href": "https://linktr.ee/FlowGPT",
     "newWindow": true
-  }
+  },
+
+  "feedback.content": "null"
 }

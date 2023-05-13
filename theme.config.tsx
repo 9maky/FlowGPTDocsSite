@@ -1,18 +1,51 @@
-import React from 'react'
-import { DocsThemeConfig } from 'nextra-theme-docs'
+//I used nextra library for next.js. This is theme configuration for it:
+//https://nextra.site/docs/docs-theme/theme-configuration
 
-const config: DocsThemeConfig = {
-  logo: <span>My Project</span>,
-  project: {
-    link: 'https://github.com/shuding/nextra-docs-template',
-  },
+import React from "react";
+
+const config = {
+  logo: (
+    <span>
+      <b>FlowGPT</b> Docs
+    </span>
+  ),
+
   chat: {
-    link: 'https://discord.com',
+    link: "https://discord.gg/EuYSg52q4Q",
   },
-  docsRepositoryBase: 'https://github.com/shuding/nextra-docs-template',
-  footer: {
-    text: 'Nextra Docs Template',
-  },
-}
 
-export default config
+  footer: {
+    text: "FlowGPT Docs",
+  },
+
+  useNextSeoProps() {
+    return {
+      titleTemplate: "%s – FlowGPT",
+    };
+  },
+
+  nextThemes: {
+    defaultTheme: "dark",
+  },
+
+  banner: {
+    key: "hackathon",
+    text: (
+      <a href="https://flowgpt.com/bounty" target="_blank">
+        🎉 FlowGPT Hackathon Season 2 is released. Join here →
+      </a>
+    ),
+  },
+
+  feedback: {
+    content: null
+  },
+
+  editLink: {
+    text: null
+  }
+
+   
+};
+
+export default config;
